@@ -1,0 +1,23 @@
+@media only screen and (max-device-width: 480px) and (orientation: portrait) {
+  .pageContent { height: 380px; }
+}
+
+@media only screen and (max-device-width: 480px) and (orientation: landscape) {
+  .pageContent { height: 230px; font-size: 95%; }
+}
+
+@media only screen and (max-height: 360px) and (orientation: portrait) {
+  .pageContent { height: 330px; font-size: 85%; }
+}
+
+@media only screen and (max-height: 260px) and (orientation: landscape) {
+  .pageContent { font-size: 95%; margin-top: 10px; }
+}
+
+@media only screen and (min-width: 768px) and (orientation: portrait) {
+  .pageContent { height: 92%; font-size: 150%; }
+}
+
+@media only screen and (min-width: 768px) and (orientation: landscape) {
+  .pageContent { height: 89%; font-size: 150%; }
+}

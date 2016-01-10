@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CineScope - Search</title>
+		<meta name="application-name" content="CineScope"/>
+		<meta name="keywords" content="HTML5,jquery-mobile"/>
+		<meta name="author" content="Amit Dubey"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+		<meta charset="utf-8"/>
+		<link rel="stylesheet" href="js/jquery.mobile-1.2.0.min.css" />
+		<link rel="stylesheet" href="js/mstyles.css">
+		<script src="js/jquery-1.8.2.min.js"></script>
+		<script src="js/jquery.mobile-1.2.0.min.js"></script>
+		<script src="js/movie-min.js"></script>
+	</head>
+	<body>
+		<div data-role="page" id="searchPage" class="pageContent" data-add-back-btn="true">
+			<div data-role="header" data-id="head1" data-position="fixed">
+				<h1 style="white-space: normal">Search Movie</h1>
+				<a href="app_info.html" data-icon="info" class="ui-btn-right" data-rel="dialog" data-inline="true" data-transition="pop">About</a>
+			</div>
+			<div data-role="content" data-theme="c" >
+				<section id="enterdata">
+					<input type="text" placeholder="Enter a movie title" id="userdata" />
+					<div>
+						<button type="search" id="search" data-icon="search" data-theme="b" data-mini="true">
+							Search
+						</button>
+					</div>
+				</section>
+				<section id="moviedata"></section>
+			</div>
+			<p>
+				<br />
+			</p>
+			<div data-role="footer" data-id="foot1" data-position="fixed">
+				<h4>Developed by... Amit Dubey</h4>
+			</div>
+		</div>
+	</body>
+</html>

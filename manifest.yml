@@ -1,0 +1,14 @@
+---
+applications:
+  .:
+    name: movieapp
+    framework:
+      name: php
+      info:
+        mem: 128M
+        description: HTML5 Application
+        exec: 
+    infra: hp
+    url: ${name}.${target-base}
+    mem: 512M
+    instances: 1

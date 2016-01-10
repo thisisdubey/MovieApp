@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CineScope - Home</title>
+		<meta name="application-name" content="CineScope"/>
+		<meta name="keywords" content="HTML5,jquery-mobile"/>
+		<meta name="author" content="Amit Dubey"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+		<meta charset="utf-8"/>
+		<link rel="stylesheet" href="js/jquery.mobile-1.2.0.min.css" />
+		<link rel="stylesheet" href="js/mstyles.css">
+		<script src="js/jquery-1.8.2.min.js"></script>
+		<script src="js/jquery.mobile-1.2.0.min.js"></script>
+		<script src="js/movie-min.js"></script>
+		<script src="js/feed-min.js"></script>
+	</head>
+
+	<body>
+		<div data-role="page" class="pageContent" id="home">
+
+			<div data-role="header" data-id="head1" data-position="fixed">
+				<h1 style="white-space: normal">CineScope</h1>
+				<a href="app_info.html" data-icon="info" class="ui-btn-right" data-rel="dialog" data-inline="true" data-transition="pop">About</a>
+			</div>
+			<div data-role="content" data-theme="a" >
+				<ul data-role="listview" data-inset="true" data-theme="c">
+					<li>
+						<a href="search_movies.html" data-icon="arrow-r" data-transition="slidedown"> <img src="images/movie_tag.png" class="ui-li-icon"/> <h3 style="white-space: normal"> Search Movies </h3>
+						<p  style="white-space: normal">
+							Find summary with picture
+						</p>
+						<p class="ui-li-aside">
+							<strong>TMDB</strong>
+						</p></a>
+					</li>
+				</ul>
+				<ul data-role="listview" data-inset="true" data-theme="c">
+					<li>
+						<a href="news_movies.html" data-icon="arrow-r" data-transition="flip"> <img src="images/search_tag.png" class="ui-li-icon"/> <h3 style="white-space: normal"> New Movies </h3>
+						<p style="white-space: normal">
+							Find list of upcoming movies
+						</p>
+						<p class="ui-li-aside" style="white-space: normal">
+							<strong>Rotten Tomatoes</strong>
+						</p></a>
+					</li>
+				</ul>
+			</div>
+			<div data-role="footer" data-id="foot1" data-position="fixed">
+				<h4>Developed by... Amit Dubey</h4>
+			</div>
+		</div>
+
+		<div data-role="dialog" id="ui-desktop-browser">
+			<div data-role="header">
+				<h1 style="white-space: normal">Browser Info</h1>
+			</div>
+			<div data-role="content" data-theme="d">
+				<h2>This is a desktop browser</h2>
+				<p>
+					Well, you are not using Mobile browser to view CineScope.
+				</p>
+				<p>
+					You can browse CineScope on desktop browser (not good with desktop IE), however, CineScope has been created for HTML5 supported browsers and look & feel has been maintained only for Mobile devices.
+				</p>
+				<a href="#home" data-role="button" data-icon="home" data-transition="slidedown">Continue</a>
+			</div>
+		</div>
+	</body>
+</html>
